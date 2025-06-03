@@ -1,0 +1,6 @@
+Python 3.8+
+PyQt5
+python-can
+pyserial
+numpy
+matplotlib (for map visualization)

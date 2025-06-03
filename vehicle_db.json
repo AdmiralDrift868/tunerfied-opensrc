@@ -1,0 +1,260 @@
+{
+  "toyota_supra_2020": {
+    "make": "Toyota",
+    "model": "Supra",
+    "year": 2020,
+    "vin_pattern": "JTD*",
+    "ecus": {
+      "Engine ECU": {
+        "ecu_type": "Engine ECU",
+        "protocol": "CAN",
+        "maps": {
+          "Fuel Map": {
+            "name": "Fuel Map",
+            "address": 2016,
+            "size": [
+              20,
+              20
+            ],
+            "units": "mg/stroke",
+            "min_value": 0,
+            "max_value": 50,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          },
+          "Ignition Map": {
+            "name": "Ignition Map",
+            "address": 2032,
+            "size": [
+              20,
+              20
+            ],
+            "units": "\u00b0 BTDC",
+            "min_value": 5,
+            "max_value": 45,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          }
+        },
+        "base_address": 2016,
+        "response_id": 2024,
+        "security_level": 0,
+        "flash_size": 1048576,
+        "supported_services": [
+          "read",
+          "write",
+          "flash"
+        ]
+      },
+      "Transmission ECU": {
+        "ecu_type": "Transmission ECU",
+        "protocol": "CAN",
+        "maps": {
+          "Shift Map": {
+            "name": "Shift Map",
+            "address": 1952,
+            "size": [
+              10,
+              10
+            ],
+            "units": "RPM",
+            "min_value": 1500,
+            "max_value": 7000,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          }
+        },
+        "base_address": 2016,
+        "response_id": 2024,
+        "security_level": 0,
+        "flash_size": 1048576,
+        "supported_services": [
+          "read",
+          "write",
+          "flash"
+        ]
+      }
+    },
+    "supported_protocols": [
+      "CAN"
+    ],
+    "validation_key": null,
+    "requires_signature": true,
+    "max_safety_deviation": 15.0
+  },
+  "bmw_m3_2022": {
+    "make": "BMW",
+    "model": "M3",
+    "year": 2022,
+    "vin_pattern": "WBS*",
+    "ecus": {
+      "Engine ECU": {
+        "ecu_type": "Engine ECU",
+        "protocol": "UDS",
+        "maps": {
+          "Torque Map": {
+            "name": "Torque Map",
+            "address": 4096,
+            "size": [
+              30,
+              30
+            ],
+            "units": "Nm",
+            "min_value": 50,
+            "max_value": 500,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          },
+          "Boost Map": {
+            "name": "Boost Map",
+            "address": 4352,
+            "size": [
+              20,
+              20
+            ],
+            "units": "kPa",
+            "min_value": 90,
+            "max_value": 250,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          }
+        },
+        "base_address": 2016,
+        "response_id": 2024,
+        "security_level": 0,
+        "flash_size": 2097152,
+        "supported_services": [
+          "read",
+          "write",
+          "flash"
+        ]
+      }
+    },
+    "supported_protocols": [
+      "UDS",
+      "CAN"
+    ],
+    "validation_key": null,
+    "requires_signature": true,
+    "max_safety_deviation": 15.0
+  },
+  "ford_mustang_2021": {
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2021,
+    "vin_pattern": "1FA*",
+    "ecus": {
+      "Engine ECU": {
+        "ecu_type": "Engine ECU",
+        "protocol": "OBD-II",
+        "maps": {
+          "Throttle Map": {
+            "name": "Throttle Map",
+            "address": 2048,
+            "size": [
+              15,
+              15
+            ],
+            "units": "%",
+            "min_value": 0,
+            "max_value": 100,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          },
+          "Cam Timing": {
+            "name": "Cam Timing",
+            "address": 2064,
+            "size": [
+              10,
+              10
+            ],
+            "units": "\u00b0",
+            "min_value": -10,
+            "max_value": 10,
+            "axis_labels": [
+              "RPM",
+              "Load"
+            ],
+            "data_type": "float32",
+            "scaling_factor": 1.0,
+            "offset": 0.0,
+            "checksum_address": null,
+            "description": "",
+            "read_only": false,
+            "editable": true
+          }
+        },
+        "base_address": 2016,
+        "response_id": 2024,
+        "security_level": 0,
+        "flash_size": 1048576,
+        "supported_services": [
+          "read",
+          "write",
+          "flash"
+        ]
+      }
+    },
+    "supported_protocols": [
+      "OBD-II",
+      "CAN"
+    ],
+    "validation_key": null,
+    "requires_signature": false,
+    "max_safety_deviation": 15.0
+  }
+}

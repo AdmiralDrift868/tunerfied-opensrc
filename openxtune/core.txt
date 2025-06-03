@@ -1,0 +1,14 @@
+CANxTune/
+├── core/                  # Core system components
+│   ├── can_protocols/     # Protocol implementations
+│   ├── vehicle_db/        # Vehicle definitions database
+│   ├── flash_manager/     # Read/write/flash management
+│   └── safety/            # Safety systems and validation
+├── gui/                   # Graphical interface
+├── modules/               # System modules
+│   ├── ecu_tuner/         # Engine control unit
+│   ├── tcu_tuner/        # Transmission control
+│   ├── abs_tuner/        # Brake system
+│   └── tcs_tuner/        # Traction control
+├── hardware/              # Interface adapters
+└── docs/                  # Documentation
